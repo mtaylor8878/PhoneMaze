@@ -67,7 +67,7 @@
     free(startTexels);
     free(faces);
 
-    return [[Model alloc] initWithTex:vertices numVert:faceSize norms:normals inds:indices numInd:faceSize * 3 texels:texels texInd:6];
+    return [[Model alloc] initWithTex:vertices numVert:faceSize * 3 norms:normals inds:indices numInd:faceSize * 3 texels:texels texInd:6];
     
     /*for(int i = 0; i < faceSize; i++) {
         NSLog([NSString stringWithFormat:@"f %d/%d/%d %d/%d/%d %d/%d/%d",faces[i * 9],faces[i * 9 + 1],faces[i * 9 + 2],faces[i * 9 + 3],faces[i * 9 + 4],faces[i * 9 + 5],faces[i * 9 + 6],faces[i * 9 + 7],faces[i * 9 + 8]]);
